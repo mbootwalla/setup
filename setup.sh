@@ -4,7 +4,7 @@
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
-sudo apt-get install -y git-core
+#sudo apt-get install -y git-core
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest production node
@@ -34,10 +34,10 @@ fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
-git clone https://github.com/startup-class/dotfiles.git
-ln -sb dotfiles/.screenrc .
-ln -sb dotfiles/.bash_profile .
-ln -sb dotfiles/.bashrc .
-ln -sb dotfiles/.bashrc_custom .
-ln -sf dotfiles/.emacs.d .
+#git clone https://github.com/startup-class/dotfiles.git
+ln -sb $HOME/repos/dotfiles/.screenrc .
+ln -sb $HOME/repos/dotfiles/.bash_profile .
+ln -sb $HOME/repos/dotfiles/.bashrc .
+ln -sb $HOME/repos/dotfiles/.bashrc_custom .
+ln -sf $HOME/repos/dotfiles/.emacs.d .
 
